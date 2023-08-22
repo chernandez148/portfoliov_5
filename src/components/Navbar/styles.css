@@ -1,0 +1,30 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+    padding: 0 1rem;
+}
+
+.nav-list {
+    display: none;
+}
+
+.nav-item {
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    .Navbar {
+        justify-content: space-around;
+
+    }
+
+    .nav-list {
+        display: flex;
+    }
+}

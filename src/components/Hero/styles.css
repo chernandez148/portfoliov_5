@@ -1,0 +1,150 @@
+@import url('../../fonts/fonts.css');
+
+canvas {
+    position: absolute;
+    top: 0;
+}
+
+.circle-1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    background: #797162;
+    background: linear-gradient(39deg, #797162 0%, rgba(252, 252, 252, 1) 100%);
+    right: 0;
+    margin: 5rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    transition: opacity .5s ease-in-out;
+
+}
+
+.circle-2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    background: #797162;
+    background: linear-gradient(39deg, #797162 0%, rgba(252, 252, 252, 1) 100%);
+    right: 0;
+    margin: 10rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    z-index: 0;
+    transition: opacity .5s ease-in-out;
+    transition-delay: 1s;
+
+}
+
+.circle-3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    background: #797162;
+    background: linear-gradient(39deg, #797162 0%, rgba(252, 252, 252, 1) 100%);
+    right: 0;
+    bottom: 115px;
+    margin: 5rem 30rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    z-index: 2;
+    transition: opacity .5s ease-in-out;
+    transition-delay: 2s;
+
+}
+
+.circle-4 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    background: #797162;
+    background: linear-gradient(39deg, #797162 0%, rgba(252, 252, 252, 1) 100%);
+    right: 0;
+    margin: 10rem 30rem;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    transition: opacity .5s ease-in-out;
+    transition-delay: 2s;
+
+}
+
+.scroll-behaviour {
+    border: 2px solid black;
+    height: 50px;
+    width: 20px;
+    margin: 0 auto;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: black;
+    border-radius: 50%;
+    margin: 4px auto;
+    position: relative;
+}
+
+.cover-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+    padding: 3rem 1rem;
+}
+
+.cover {
+    z-index: 2;
+}
+
+.cover h4,
+.cover p {
+    margin: 0;
+    position: relative;
+    transition: bottom .75s ease-in-out, opacity 1s ease-in-out;
+}
+
+.cover h1 {
+    margin: 1rem 0;
+    font-size: 48px;
+    font-weight: 500;
+    position: relative;
+    transition: bottom .75s ease-in-out, opacity 1s ease-in-out;
+    transition-delay: .1s;
+}
+
+.cover h4 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    padding-top: 1.5rem;
+}
+
+.cover p {
+    font-size: 18px;
+    transition-delay: .5s;
+}
+
+.profile-img {
+    z-index: 1;
+}
+
+@media screen and (min-width: 700px) {
+    .cover-wrapper {
+        width: 80% !important;
+        margin: 0 auto;
+        flex-direction: row;
+        padding-top: 5rem;
+        justify-content: space-between;
+    }
+
+    .cover h1 {
+        font-size: 60px;
+    }
+}

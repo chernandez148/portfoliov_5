@@ -1,0 +1,70 @@
+.Projects {
+    padding: 1rem;
+}
+
+.projects-title {
+    margin: 1rem 0;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.project-wrapper div {
+    box-shadow: 0 0 5px 0px #c3c3c3;
+    margin: 1.5rem 0;
+}
+
+.project-1 {
+    position: relative;
+}
+
+.project-1 article {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    height: 89%;
+    width: 92%;
+    margin: 0;
+    color: white;
+    padding: 4%;
+    z-index: -1;
+    transition: background-color .5s ease-in-out;
+}
+
+.project-1 article:hover {
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+span,
+h1,
+p {
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+    border: 0;
+    padding-right: 1rem;
+    color: white;
+}
+
+.project-1 img {
+    position: relative;
+}
+
+@media screen and (min-width: 700px) {
+    .Projects {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .project-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 1.5rem;
+        justify-content: space-between;
+    }
+
+    .project-wrapper div {
+        width: 25%;
+    }
+}
