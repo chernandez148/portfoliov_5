@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setYAxis } from '../../redux/slices/yAxis'; // Import the action creator
 import { setIsOpacity } from '../../redux/slices/isOpacity';
 import ParticleCanvas from '../ParticleCanvas/ParticleCanvas';
-import profileImg from '../../assets/download (4).png'
+import profileImg from '../../assets/me.png'
 import './styles.css';
 
 function Hero() {

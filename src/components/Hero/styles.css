@@ -11,8 +11,8 @@ canvas {
     border-radius: 50%;
     display: block;
     position: absolute;
-    background: #797162;
-    background: linear-gradient(39deg, #797162 0%, rgba(252, 252, 252, 1) 100%);
+    background: #74757b;
+    background: linear-gradient(39deg, #74757b 0%, rgba(252, 252, 252, 1) 100%);
     right: 0;
     margin: 5rem;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
@@ -26,8 +26,8 @@ canvas {
     border-radius: 50%;
     display: block;
     position: absolute;
-    background: #797162;
-    background: linear-gradient(39deg, #797162 0%, rgba(252, 252, 252, 1) 100%);
+    background: #74757b;
+    background: linear-gradient(39deg, #74757b 0%, rgba(252, 252, 252, 1) 100%);
     right: 0;
     margin: 10rem;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
@@ -43,8 +43,8 @@ canvas {
     border-radius: 50%;
     display: block;
     position: absolute;
-    background: #797162;
-    background: linear-gradient(39deg, #797162 0%, rgba(252, 252, 252, 1) 100%);
+    background: #74757b;
+    background: linear-gradient(39deg, #74757b 0%, rgba(252, 252, 252, 1) 100%);
     right: 0;
     bottom: 115px;
     margin: 5rem 30rem;
@@ -61,8 +61,8 @@ canvas {
     border-radius: 50%;
     display: block;
     position: absolute;
-    background: #797162;
-    background: linear-gradient(39deg, #797162 0%, rgba(252, 252, 252, 1) 100%);
+    background: #74757b;
+    background: linear-gradient(39deg, #74757b 0%, rgba(252, 252, 252, 1) 100%);
     right: 0;
     margin: 10rem 30rem;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
@@ -133,6 +133,7 @@ canvas {
 
 .profile-img {
     z-index: 1;
+    filter: saturate(0.5);
 }
 
 @media screen and (min-width: 700px) {
