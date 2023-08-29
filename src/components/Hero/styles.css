@@ -11,11 +11,11 @@ canvas {
     border-radius: 50%;
     display: block;
     position: absolute;
-    background: #74757b;
-    background: linear-gradient(39deg, #74757b 0%, rgba(252, 252, 252, 1) 100%);
+    background: #e1e1e1;
+    background: linear-gradient(39deg, #e1e1e1 0%, rgba(252, 252, 252, 1) 100%);
     right: 0;
     margin: 5rem;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    /* filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1)); */
     transition: opacity .5s ease-in-out;
 
 }
@@ -26,11 +26,11 @@ canvas {
     border-radius: 50%;
     display: block;
     position: absolute;
-    background: #74757b;
-    background: linear-gradient(39deg, #74757b 0%, rgba(252, 252, 252, 1) 100%);
+    background: #e1e1e1;
+    background: linear-gradient(39deg, #e1e1e1 0%, rgba(252, 252, 252, 1) 100%);
     right: 0;
     margin: 10rem;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    /* filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1)); */
     z-index: 0;
     transition: opacity .5s ease-in-out;
     transition-delay: 1s;
@@ -43,16 +43,15 @@ canvas {
     border-radius: 50%;
     display: block;
     position: absolute;
-    background: #74757b;
-    background: linear-gradient(39deg, #74757b 0%, rgba(252, 252, 252, 1) 100%);
+    background: #e1e1e1;
+    background: linear-gradient(39deg, #e1e1e1 0%, rgba(252, 252, 252, 1) 100%);
     right: 0;
     bottom: 115px;
-    margin: 5rem 30rem;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    margin: 5rem 2rem;
+    /* filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1)); */
     z-index: 2;
     transition: opacity .5s ease-in-out;
     transition-delay: 2s;
-
 }
 
 .circle-4 {
@@ -61,11 +60,11 @@ canvas {
     border-radius: 50%;
     display: block;
     position: absolute;
-    background: #74757b;
-    background: linear-gradient(39deg, #74757b 0%, rgba(252, 252, 252, 1) 100%);
+    background: #e1e1e1;
+    background: linear-gradient(39deg, #e1e1e1 0%, rgba(252, 252, 252, 1) 100%);
     right: 0;
     margin: 10rem 30rem;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    /* filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1)); */
     transition: opacity .5s ease-in-out;
     transition-delay: 2s;
 
@@ -101,6 +100,7 @@ canvas {
 
 .cover {
     z-index: 2;
+    padding-top: 5rem;
 }
 
 .cover h4,
@@ -113,14 +113,13 @@ canvas {
 .cover h1 {
     margin: 1rem 0;
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 600;
     position: relative;
     transition: bottom .75s ease-in-out, opacity 1s ease-in-out;
     transition-delay: .1s;
 }
 
 .cover h4 {
-    font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 400;
     font-size: 24px;
     padding-top: 1.5rem;
@@ -129,11 +128,54 @@ canvas {
 .cover p {
     font-size: 18px;
     transition-delay: .5s;
+    margin-bottom: 3rem;
+}
+
+.work-together-wrapper {
+    width: fit-content;
+}
+
+.work-together-wrapper a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color .5s ease-in-out;
+}
+
+.color-black {
+    color: rgb(41, 41, 41);
+}
+
+.color-black-50 {
+    color: rgb(37, 37, 37);
+}
+
+.work-together-wrapper hr {
+    transition: width .5s ease-in-out;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-0 {
+    width: 0;
 }
 
 .profile-img {
+    position: relative;
     z-index: 1;
     filter: saturate(0.5);
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .profile-img {
+        position: absolute;
+        right: 189px;
+        padding-top: 10rem;
+    }
 }
 
 @media screen and (min-width: 700px) {
