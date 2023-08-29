@@ -1,0 +1,59 @@
+.Footer {
+    background-color: #8c95a3;
+    padding: 1.5rem;
+}
+
+.Footer h2 {
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+}
+
+.Footer p {
+    color: #fbfbfb;
+}
+
+.address p {
+    margin: .5rem 0;
+    font-size: 15px;
+}
+
+.contact {
+    padding: 0;
+}
+
+.contact li {
+    list-style-type: none;
+    display: flex;
+    color: #fbfbfb;
+    margin: .5rem 0;
+}
+
+.contact p,
+.contact a {
+    margin: 0 0 0 .75rem;
+    font-size: 14px;
+    color: #fbfbfb;
+    text-decoration: none;
+}
+
+.footer-right {
+    margin-top: 3rem;
+}
+
+@media screen and (min-width: 870px) {
+    .footer-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footer-content-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-right {
+        margin-top: 0;
+    }
+
+}
