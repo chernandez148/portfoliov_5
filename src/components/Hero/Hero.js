@@ -16,6 +16,7 @@ function Hero() {
         p: -120
     })
     const [textOpacity, setTextOpacity] = useState(0)
+    const [horizontalLine, setHorizontalLine] = useState(false)
     const dispatch = useDispatch();
 
     const scrollAnimate = () => {
@@ -61,6 +62,14 @@ function Hero() {
         })
     }, []);
 
+    const handleHrWidth100 = () => {
+        setHorizontalLine(true)
+    }
+
+    const handleHrWidth0 = () => {
+        setHorizontalLine(false)
+    }
+
     return (
         <section className='Hero'>
             <ParticleCanvas />
@@ -74,9 +83,13 @@ function Hero() {
                 <div className='cover'>
                     <h4 style={{ bottom: textAnimation.h4, opacity: textOpacity }}>Christian Hernandez</h4>
                     <h1 style={{ bottom: textAnimation.h1, opacity: textOpacity }}>Website and <br />
-                        UX/UI Designer
+                        UX/UI Develop[er]
                     </h1>
                     <p style={{ bottom: textAnimation.p, opacity: textOpacity }}>A web developer looking to create amazing art for the web.</p>
+                    <div className='work-together-wrapper' onMouseEnter={handleHrWidth100} onMouseLeave={handleHrWidth0}>
+                        <a className={`know-me  ${horizontalLine ? "color-black-50" : "color-black"}`} href='#'>LET'S WORK TOGETHER</a>
+                        <hr className={horizontalLine ? "w-100 border-black" : "w-0"} />
+                    </div>
                 </div>
                 <img className='profile-img' src={profileImg} />
             </div>
